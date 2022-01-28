@@ -15,7 +15,7 @@
             <img src="../assets/images/aspire__logo__green.png"  class="aspire__logo__sidebar"/>
             <p class="trusted__text">Trusted way of banking for 3,000+ SMEs and startups in Singapore </p>
             <template v-for="(menuItem, index) in menuList" :key="index">
-              <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
+              <q-item clickable :active="menuItem.label === 'Cards'" v-ripple>
                 <q-item-section avatar>
                   <!-- <q-icon :name="menuItem.icon" /> -->
                   <img :src="require(`../assets/images/${menuItem.image}`)" />
@@ -105,6 +105,10 @@
               <q-tab-panel name="my__debit__cards">
                 <div class="q-pa-md">
                   <div class="row resposnive__row__content">
+                    <div class="show_card_number"> 
+                      <img src="../assets/images/eye__icon.svg" />
+                      <span>Show card number</span>
+                    </div>
                     <div class="col left_side_card">
                         <q-carousel
                           v-model="slide"
@@ -115,10 +119,12 @@
                           padding
                           height="300px"
                           class="text-white rounded-borders"
-                        >
+                        > 
                         <template v-for="(cardData,index) in cardsList" :key="index">
                           <q-carousel-slide :name="cardData.id" class="column no-wrap flex-center card__aspire_credits"  >
-                            <div class="card-front">
+                             
+                            <div class="card-front"> 
+                             
                                 <div class="card-view-container">
                                     <div class="asplogo">
                                         <img src="../assets/images/Aspire_Logo_wgite.svg" class="asplogo-img">
@@ -368,12 +374,12 @@ const menuList = [
   {
     image: 'Home.svg',
     label: 'Home',
-    separator: false
+    separator: false,
   },
   {
     image: 'card_menu.svg',
     label: 'Cards',
-    separator: false
+    separator: false,
   },
   {
     image: 'Payments.svg',

@@ -283,7 +283,34 @@
 .rounded-borders{
     border-radius: 0px !important;
 }
+.show_card_number{
+    color: #01D167;
+    position: absolute;
+    margin-top: -25px;
+    text-align: right;
+    width: 47%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
 
+.show_card_number span{
+    padding-left: 10px;
+    font-weight: 600;
+}
+.resposnive__row__content{
+    margin-top:30px;
+}
+.left_side_card{
+    margin-top:14px;
+}
+.right__side__card{
+    margin-top:14px;
+}
+.q-item.q-router-link--active, .q-item--active{
+    color: #01D167;
+    font-weight: 600;
+}
 @media screen and (max-width: 820px){
     body {
         background-color: #0C365A;
@@ -369,5 +396,11 @@
         background-color: transparent;
         color: #23CEFD;
         font-size: 20px;
+    }
+    .show_card_number{
+        width: 95%;
+    }
+    .left_side_card{
+        margin-top: 37px;
     }
 }

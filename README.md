@@ -3,8 +3,8 @@
 A Quasar Framework app
 
 # Tech usage:
-  Quasar framework for JS
-  SASS framework for CSS
+  Quasar framework for JS,   
+  SASS framework for CSS,   
   included all the quasar framwork library itself from offical website
   
 # steps to run the application

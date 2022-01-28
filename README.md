@@ -1,7 +1,11 @@
 # electron (assignment)
 
 A Quasar Framework app
+# steps to run the application
 
+git clone 
+npm install
+npx quasar dev
 ## Install the dependencies
 ```bash
 yarn

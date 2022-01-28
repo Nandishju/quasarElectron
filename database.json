@@ -17,24 +17,7 @@
       "name": "Clementine Bauch",
       "card_number": "9876543213456789",
       "cvv__number": "546"
-    },
-    {
-      "name": "Prakruti",
-      "card_number": "fsdfsd",
-      "cvv__number": "fdsvfsd",
-      "id": 4
-    },
-    {
-      "name": "fsdf",
-      "card_number": "fdsfsd",
-      "cvv__number": "fsdfdsf",
-      "id": 5
-    },
-    {
-      "name": "rfesdf",
-      "card_number": "fdsf",
-      "cvv__number": "fdsfds",
-      "id": 6
     }
+   
   ]
 }

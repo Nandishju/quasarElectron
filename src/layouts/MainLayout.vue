@@ -128,7 +128,7 @@
                                             <div class="oncard-holder-name">{{cardData.name}}</div>
                                         </div>
                                         <div class="col-lg-12 oncard">
-                                            <div class="oncard-cardnumb">{{cardData.card_number}}</div>
+                                            <div class="oncard-cardnumb">{{cardData.card_number }}</div>
                                         </div>                        
                                         <div class="row oncard">
                                             <div class="col-sm-4 card-moyr">
@@ -431,9 +431,15 @@ export default {
     },
     ...mapActions(["fetchUsers", "deleteUser"])
   },
+ 
   computed: mapGetters(["cardsList"]),
     created() {
       this.fetchUsers()
-    }
+    },
+     filters: {
+      formatCardNumber(value){
+          return value ? (value.replace(/ /g, '')).match(/.{1,4}/g).join(' ') : '';
+      } 
+    },
 }
 </script>

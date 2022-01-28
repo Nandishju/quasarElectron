@@ -3,9 +3,16 @@
 A Quasar Framework app
 
 # Tech usage:
-  Quasar framework for JS,   
-  SASS framework for CSS,   
-  included all the quasar framwork library itself from offical website
+  Javascript
+  Quasar framework in VueJS,   
+  SASS framework for CSS, 
+  VueJS,
+  Vuex,
+  
+  included all the quasar framwork library itself from offical website,
+  
+  Add the functinality for the add the card details with validation,
+  Modal UI add for form to enter the card inputs (UI is not much designed) added the functinlaity
   
 # steps to run the application
 
